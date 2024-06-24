@@ -1,108 +1,67 @@
-# 欢迎使用ss panel v3 mod 再次修改版
+<img src=".github/next_1000.png" alt="next" width="600"/>
+
+![GitHub repo size](https://img.shields.io/github/repo-size/SSPanel-NeXT/NeXT-Panel-Dev?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/SSPanel-NeXT/NeXT-Panel-Dev/lint.yml?branch=dev&label=lint&style=flat-square)
+![Sonar Quality Gate](https://img.shields.io/sonar/quality_gate/SSPanel-NeXT_NeXT-Panel-Dev/dev?server=https%3A%2F%2Fsonarcloud.io&style=flat-square)
+![Sonar Coverage](https://img.shields.io/sonar/coverage/SSPanel-NeXT_NeXT-Panel-Dev/dev?server=https%3A%2F%2Fsonarcloud.io&style=flat-square)
+
+[![X (formerly Twitter)](https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2FSSPanel_NeXT)](https://twitter.com/SSPanel_NeXT)
+[![Discord](https://img.shields.io/discord/1049692075085549600?color=5865F2&label=Discord&style=flat-square)](https://discord.gg/A7uFKCvf8V)
 
 
-**ss-panel-v3-mod**是一款专为shadowsocks设计的web前端面板，再次感谢ss-panel-v3-mod 的制作者，修改后的功能简介：
+# Migration Notice: SSPanel-UIM
 
-- **支付系统集成**：集成 支付宝当面付  易付通 码支付 TrimePay 等多种支付系统，使用方法见项目[wiki](https://github.com/NimaQu/ss-panel-v3-mod_Uim/wiki/)
-- **UI** ：修改为 ~~援交~~ 圆角、并自定义了几个图标的显示，节点列表等級0可见等級1节点但无法看见节点详情，增加了国家图标显示
-- **商店**：商品增加同时连接设备数，用户限速属性
-- 从肥羊那里**抄**来的：新用户注册现金奖励|高等级节点体验|设备数量限制
-- **优化**：css和js等置入本地提升加载速度
-- 增加**v2Ray** 功能，详情请看 [wiki](https://github.com/NimaQu/ss-panel-v3-mod_Uim/wiki/v2ray-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
+## We would like to kindly inform you that the project has been migrated to **[SSPanel-NeXT](https://github.com/SSPanel-NeXT/NeXT-Server)**. We invite you to visit our new repository to access the latest updates and developments.
 
-Telegram 频道 ：https://t.me/sspanel_Uim
+## TL;DR
 
+NeXT Panel is a multipurpose proxy service management system designed for Shadowsocks(2022) / Vmess / Trojan / TUIC protocol.
 
-演示站: [sspanel.host](https://sspanel.host) 账号和密码都是 admin  对接节点的 mukey=NimaQu
+## Features
 
-**原作者** [galaxychuck](https://github.com/galaxychuck)
+- Integrate multiple payment systems such as Alipay F2F, PayPal, Stripe, etc.
+- Support multiple mail services, built-in mail queue function, no third-party components are required to use
+- Built-in tabler theme based on Bootstrap 5, template engine support
+- Support Shadowsocks 2022, TUIC, and other latest proxy protocols
+- Universal subscription interface, one-click json/clash/sip008/sing-box format subscription distribution
+- Custom node configuration, modular subscription system, support multiple client-specific subscription formats
+- Refactored store system, support billing modes including but not limited to annual/monthly, pay-as-you-go, access type billing, etc.
+- Refactored scheduled task system, one command can automatically complete all scheduled tasks
+- Deep integration of large language models, support intelligent replies to tickets, document generation, and other functions
+- One-click access to OpenAI, Google AI, Vertex AI, Hugging Face Hosted API, Cloudflare Workers AI, Anthropic, and other large language model services
 
-[支持开发者请点我](https://github.com/NimaQu/ss-panel-v3-mod_UIM#%E5%85%B3%E4%BA%8E%E6%8D%90%E8%B5%A0)
+## Installation
 
-## 搭建教程
+NeXT Panel requires the following programs to be installed and run normally:
 
-GitHub Wiki : https://github.com/NimaQu/ss-panel-v3-mod_Uim/wiki/%E5%89%8D%E7%AB%AF%E5%AE%89%E8%A3%85
+- Git
+- Nginx（HTTPS configured）
+- PHP 8.2+ （OPcache+JIT enabled）
+- PHP Redis extension 6.0+
+- MariaDB 10.11+（Disable strict mode）
+- Redis 7.0+
 
-Wiki已经启用，欢迎为此面板维护wiki
+## Ecosystem
 
-#### 鸣谢
+- [NeXT Server](https://github.com/SSPanel-NeXT/NeXT-Server)
+- NeXT Desktop(WiP)
+- [NetStatus-API-Go](https://github.com/SSPanel-NeXT/NetStatus-API-Go)
 
-##### [galaxychuck](https://github.com/galaxychuck)
+## Documentation
 
-- 面板**原作者**
+[NeXT Panel Docs](https://docs.sspanel.org)
 
-##### [hkserversolution](https://www.hkserversolution.com/cart.php)
-- Demo 演示站服务器赞助
+## Support Developers
 
-##### [dumplin](https://github.com/dumplin233) 
+Sadly, there is no three-letter agency that wants to sponsor this project yet(/s), so the development is driven by the community and unpaid volunteers.
+Nothing will be put behind the paywall or require a donation to use, but the CI/Linux Mirror/CDN server doesn't grow on trees, if you are interested in supporting the project, you can support devs using the following methods:
 
-- 码支付对接 + 码支付当面付二合一
-- 为面板加入 AFF 链接功能
-- 商品增加限速和限制 ip 属性
-- 多端口订阅
-- 解决用户列表加载缓慢历史遗留问题
+<a href="https://www.patreon.com/catdev">Patreon (One time or monthly)</a>
 
-##### [RinSAMA](https://github.com/mxihan)
+<a href="https://www.vultr.com/?ref=8941355-8H">Vultr Ref Link</a>
 
-- 整理分类 config.php
-- 美观性调整
-- 客服系统优化
+<a href="https://www.digitalocean.com/?refcode=50f1a3b6244c">DigitalOcean Ref Link</a>
 
-##### [miku](https://github.com/xcxnig)
+## License
 
-- 美观和性能优化
-
-##### [Tony Zou](https://github.com/ZJY2003)
-
-- 为公告增加群发邮件功能
-- 节点负载情况显示&用户账户过期在首页弹窗提醒
-- 增加返利列表
-
-[**Indexyz**](https://github.com/Indexyz)
-
-- 为面板增加 v2Ray 功能
-
-[**NeverBehave**](https://github.com/NeverBehave)
-
-- 添加 Telegram OAuth
-
-[**CGDF**](https://github.com/CGDF-GitHub)
-
-- xcat一键update
-- 适配SSD
-- 用户列表分页加载
-
-[**CHEN**](https://github.com/ChenSee)
-
-- 免签约支付宝与微信，自带监听，不需第三方软件，直接到个人账户
-
-[**laurieryayoi**](https://github.com/laurieryayoi)
-
-- 重做美化UI（~~援交~~圆角化）
-
-- 重写节点列表，支持分级显示所有级别节点
-
-##### 还有所有被引用过代码的同学，以及所有提交过issue的同学。
-
-#### 关于捐赠
-
-您对我们的帮助将是支持我们做下去的动力，只需您在购买部分产品或向他人推荐产品时从我们的返利链接购买，这就是对我们很大的支持了。~~没有钱了，肯定要做啊，不做没有钱用啊，打工是不可能打工的，这辈子不可能打工的~~
-
-
-##### dumplin
-
-- [码支付-微信收款功能开通](https://codepay.fateqq.com/i/39756)
-
-##### galaxychuck
-
-- [黛米付-支付接入](https://www.daimiyun.cn/register.php?aff=624)
-- [冲上云霄云主机](http://console.soar-clouds.com/aff.php?aff=94)
-- [Vultr](https://www.vultr.com/?ref=7205737)
-
-[laurieryayoi 的前端课程报名](https://t.me/kinokonominoco)
-
-
-
-## 免责声明
-
-本程序由 MIT License 授权。**不提供任何担保**。使用本程序即表明，您知情并同意：程序开发者不对此程序导致的任何服务中断、数据损失或任何少见未列出的事故负责。
+[MIT License](blob/dev/LICENSE)
